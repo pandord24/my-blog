@@ -1,2 +1,3 @@
-# personal-blog
+# my-blog
+
 User can input and view blog posts.

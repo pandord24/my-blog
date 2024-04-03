@@ -5,57 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" type="text/css" href="./css/styles.css"> -->
-    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/form.css">
 </head>
 
 <body>
     <header>
-        <label class="switch col">Theme</label>
-        <input type="checkbox☀️" id="theme-switcher">
-        <span class="slider round"></span>
-
+        <div>&nbsp;</div>
+        <button class="toggle">☀️</button>
+        
+        
 
     </header>
 
-    <div class="container">
-        <div class="col">
-            <div class="circle">
-                <h2>
-                    My first blog
-                </h2>
-            </div>
-        </div>
 
-        
+    <main>
+        <aside>
+            <h2>My First Blog</h2>
+            
+
+        </aside>
+        <section>
+            <h2>What's on your mind?</h2>
+            <form>
+                <label for="username">
+                    Username
+
+                </label>
+                <input name="username" id="username" type="text"/>
+
+                <label for="title">Title</label>
+                <input name="content" id="title" type="text"/>
+
+                <label for="content">Content</label>
+                <textarea name="content" id="content" type="text" rows="5"></textarea> 
+
+                    <p id="error">&nbsp;</p>
+                    <input type="submit" value="Submit"/>
+            </form>
+        </section>
 
 
 
-        <div class="form">
-            <div class="card">
-                <h2>What's on your mind?</h2>
-                <form>
-                    <div class="input-group">
-                        <label for="Username">Username</label>
-                        <input type="text" name="Username" id="Username" placeholder="" />
-                    </div>
-                    
-                    <div class="input-group">
-                        <label for="Title">Title</label>
-                        <input type="text" name="Title" id="Title" placeholder="" />
-                    </div>
-                    <div class="input-group">
-                        <label for="blog">blog</label>
-                        <textarea type="text" name="blog" id="blog" placeholder="" ></textarea>
-                    </div>
-                    <div id="msg"></div>
-                    <button type="submit" id="Create">Create</button>
-                </form>
-            </div>
-        </div>
-    </div>
+    
     
     <script src="./js/blog.js"></script>
+    <script src="./js/logic.js"></script>
+    <script src="./js/form.js"></script>
 </body>
 
 </html>

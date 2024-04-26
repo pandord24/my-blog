@@ -30,7 +30,7 @@ const applyMode = function(mode) {
     }
 
 themeButton.textContent = icon;
-document.body.classlist =mode;
+document.body.classList =mode;
 document.documentElement.style.setProperty("--circle-color", circleColor);
 
 
@@ -40,7 +40,7 @@ document.documentElement.style.setProperty("--circle-color", circleColor);
 
 
 const saveMode = function(mode) {
-    localStorage.setItem("mode, mode");
+    localStorage.setItem("mode",mode);
 }
 
 const handleTheme = function () {

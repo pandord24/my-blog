@@ -3,12 +3,12 @@ const mainElement = document.querySelector('main');
 
 
 const handleEmpty = function () {
-    const element = document.createElement(type);
-    element.textContent = text;
-    parent.appendChild(element);
+    const element = document.createElement("h2");
+    element.textContent = "no blog post yet";
+    mainElement.appendChild(element);
 }
 
-const rederBlogList = function() {
+const renderBlogList = function() {
     const blogs = readBlogDataFromLocalStorage();
 
     if(blogs.length === 0) {

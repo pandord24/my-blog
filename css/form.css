@@ -15,10 +15,11 @@
 
 aside {
     display: flex;
-    background-color: linear-gradient (var(--circle-color), var(--circle-color),var(--dark-accent));
+    background: linear-gradient(var(--light-accent), var(--circle-color),var(--dark-accent));
+    border-radius: 50%;
     justify-content: center;
     align-items: center;
-    border-radius: 100%;
+   
     margin: 50px;
 }
 

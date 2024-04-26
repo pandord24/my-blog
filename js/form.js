@@ -1,4 +1,4 @@
-const formElement = document.querySlelector('form');
+const formElement = document.querySelector('form');
 
 const handleFormSubmit = function(event) {
 event.preventDefault();

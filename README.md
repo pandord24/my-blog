@@ -12,7 +12,7 @@ User can input and view blog posts.
 https://pandord24.github.io/my-blog/
 
 By clicking the link provided, you can access the project hosted by github.
-
+![portfolio website screen shot](./image/Capture.PNG)
 
 ## Credits
 

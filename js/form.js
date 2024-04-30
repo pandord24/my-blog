@@ -1,7 +1,8 @@
-const formElement = document.querySelector('form');
+const formElement = document.querySelector('#button');
 
 const handleFormSubmit = function(event) {
 event.preventDefault();
+console.log("test")
 const usernameElement = document.querySelector('#username').value.trim();
 const titleElement = document.querySelector('#title').value.trim();
 const contentElement = document.querySelector('#content').value.trim();
@@ -16,15 +17,20 @@ if(!usernameElement || !titleElement || !contentElement ) {
 
     return;
 }
+const newblogs={username:usernameElement, title:titleElement, content:contentElement}
+storeBlogDataLocalStorage(newblogs)
+redirectPage()
 }
 
 
 const redirectPage = function() {
-
+location.href="./blog.html"
 }
 
 const storeBlogDataLocalStorage = function(data) {
-
+const blogs =JSON.parse(localStorage.getItem("blogs"))||[]
+blogs.push(data)
+localStorage.setItem("blogs",JSON.stringify(blogs))
 }
 
-formElement.addEventListener('submit', handleFormSubmit)
+formElement.addEventListener('click', handleFormSubmit)
